@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Machine</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="/welcome/"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="/welcome/">Home</a></li>
+                            <li><a href="/contents/about/">About</a></li>
+                            <li><a href="/contents/model/">Model</a>
+                                <ul class="dropdown">
+                                    <li><a href="/contents/logistic/">Logistic Regression</a></li>
+                                    <li><a href="/contents/knn/">KNN</a></li>
+                                    <li><a href="/contents/randomforest/">Random Forest</a></li>
+                                    <li><a href="/contents/ada/">ADA Boost</a></li>
+                                    <li><a href="/contents/xgb/">XGBoost</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Apply</a>
+                                <ul class="dropdown">
+                                    <li><a href="/contents/group1/">Group1</a></li>
+                                    <li><a href="/contents/group2/">Group2</a></li>
+                                    <li><a href="/contents/group3/">Group3</a></li>
+                                    <li><a href="/contents/group4/">Group4</a></li>
+                                </ul>
+                            </li>
+<!--                            <li><a href="./blog.html">Blog</a></li>-->
+                            <li><a href="/contents/team/">Team</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
+                <div class="hero__text">
+                    <h2>Data is the best</h2>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
+                <div class="hero__text">
+                    <h2>Data is the power</h2>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
+                <div class="hero__text">
+                    <h2>We are the best</h2>
+                </div>
+            </div>
+        </div>
+        <div class="slide-num" id="snh-1"></div>
+        <div class="slider__progress"><span></span></div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <span>Introduce</span>
+                            <h2>Motivation for encountering topic</h2>
+                        </div>
+                        <div class="about__para__text">
+                            <p>누구나 통신사에서 프로모션 전화 받은 경험이 있을 것입니다.</p>
+                            <p> 할부가 거의 끝나가는 시기에 받은 프로모션 전화에 대해서 궁금증을 가지게 되었습니다.
+                                이 경험을 통해 계약기간이 만료되거나
+                                통신사를 이탈할 수 있는 고객에게 선별적으로 전화한다는 것을 알게 되었습니다.</p>
+                            <p> 이러한 궁금증을 바탕으로 통신사 고객 데이터 분석을 통해 이탈율 예측과
+                                마케팅 전략방안을 세워보았습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="about__pic__inner">
+                            <img src="{% static 'img/about-pic.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="copyright__text">
+                            <p>Copyright © <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a>
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="copyright__widget">
+                            <a href="#">Terms of use</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

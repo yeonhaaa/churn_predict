@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Machine</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header header-normal set-bg" data-setbg="{% static 'img/little-header.jpg' %}">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="/welcome/"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="/welcome/">Home</a></li>
+                            <li><a href="/contents/about/">About</a></li>
+                            <li><a href="/contents/model/">Model</a>
+                                <ul class="dropdown">
+                                    <li><a href="/contents/logistic/">Logistic Regression</a></li>
+                                    <li><a href="/contents/knn/">KNN</a></li>
+                                    <li><a href="/contents/randomforest/">Random Forest</a></li>
+                                    <li><a href="/contents/ada/">ADA Boost</a></li>
+                                    <li><a href="/contents/xgb/">XGBoost</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Apply</a>
+                                <ul class="dropdown">
+                                    <li><a href="/contents/group1/">Group1</a></li>
+                                    <li><a href="/contents/group2/">Group2</a></li>
+                                    <li><a href="/contents/group3/">Group3</a></li>
+                                    <li><a href="/contents/group4/">Group4</a></li>
+                                </ul>
+                            </li>
+<!--                            <li><a href="./blog.html">Blog</a></li>-->
+                            <li class="active"><a href="/contents/team/">Team</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="section-title">
+                        <span>Data.M</span>
+                        <h2>Introduce Our Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/jh.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">조제형</h5>
+                                <span>Team Leader</span>
+                            </div>
+                            <p>데이터셋 EDA<br>
+                                ADAboost 분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                마케팅 전략 분석 및 방안 제시<br>
+                                ppt 제작 및 발표</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/sh.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">심소희</h5>
+                                <span>Team member</span>
+                            </div>
+                            <p>로지스틱 회귀분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                ppt 제작</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/sb.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">안수빈</h5>
+                                <span>Team member</span>
+                            </div>
+                            <p>데이터셋 EDA<br>
+                                프로젝트 일정 수립<br>
+                                랜덤포레스트, KNN 분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                웹 페이지 제작</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/yh.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">홍연하</h5>
+                                <span>Team member</span>
+                            </div>
+                            <p>XGBoost 분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                웹 페이지 제작<br>
+                                오류 테스트</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial spad set-bg" data-setbg="{% static 'img/testimonial/testimonial-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial__carousel">
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p><h3>2020.10.26 - 2020.11.17</h3></p>
+                                    <p><h4>PYTHON 기반 데이터 분석 프로젝트</h4></p>
+                                    <img src="{% static 'img/happy.jpg' %}" style="margin:5% 10%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“파이썬 전공발표 마케팅 데이터분석 프로젝트를 진행했다. 주제선정부터 전처리, 분석, 시각화,
+                                        결과물에 대한 해석, 인사이트 도출, 실전에 적용하는 등 기업에서 실제로 진행할 데이터분석을
+                                        우리가 할 수 있는 범위 내에서 진행했다. 잘하고 싶었던 생각도 있고 누구보다 좋은 결과물을 내고 싶었다.
+                                        그래서 더욱 집중해서 프로젝트를 진행한 결과 의미있는 분석을 진행했다고 생각한다.
+                                        그 안에는 팀원들의 큰 도움이 있었다. 각자 역할 수행을 잘 진행해주었고 나보다 더 열정적으로 참여해서
+                                        도와주었기에 팀장인 내가 수월하게 팀프로젝트를 진행할 수 있었다고 생각한다.
+                                        이번 프로젝트를 통해 협업을 배웠고 데이터분석 능력을 한 단계 더 키웠다고 생각한다.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“비대면으로 바뀌어서 과연 프로젝트를 잘 해낼 수 있을까 싶었는데 적극적으로 일이 진행되어서 다행이었다.
+                                        머신러닝 구현이 마냥 해내지 못 할 일이라 생각했는데 마무리를 지었다는게 신기하다.
+                                        데이터 머신이라는 팀명 답게 분석을 잘 해낸 것 같다.
+                                        많은 참여도 못하는 상황에 열심히 도와준 3조 팀원들에게 고맙다. 하드캐리했던 팀장님도 감사합니다!”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“이번 프로젝트를 여러 분석 모델들을 공부하고 사용하면서 특성을 배울 수 있었다.
+                                        통계학 지식이 부족한 편이라 걱정은 했지만 팀원들의 도움으로 잘 마무리할 수 있었다.
+                                        온라인과 오프라인을 번갈아가면서 프로젝트를 진행했었는데, 생각했던 것 보다는 수월하게 진행되었다.
+                                        EDA부터 분석까지 모두 해보는 프로젝트는 처음이라 미숙하기도 했지만 재밌었다.
+                                        아쉬웠던 점은 우리나라의 통신사 고객에 대한 데이터를 구하지 못했던 것이다.
+                                        데이터가 구해졌다면 좀 더 개인적인 경험들을 기반으로 분석을 진행할 수 있었을 것 같다. ”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>“프로젝트를 통해 전처리부터 분석까지 경험하면서 다양한 분석 기법들을 알게 되었다.
+                                        한 가지 데이터로 다양한 결과를 볼 수 있는 것과 들어보니만 했던 분석 기법들을 직접 사용해본 점이 재미있었다.
+                                        국내 통신사 데이터를 활용하지 못한 점이 아쉽지만, 이주 정도의 기간 동안 열심히 소통하며
+                                        도와준 팀원들에게 고맙다.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 ">
+                    <div class="testimonial__client">
+                        <div class="testimonial__client__item add">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/logo.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Data.M</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/jh.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>조제형</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/sh.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>심소희</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/sb.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>안수빈</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/yh.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>홍연하</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="copyright__text">
+                            <p>Copyright © <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a>
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="copyright__widget">
+                            <a href="#">Terms of use</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
